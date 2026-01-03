@@ -6,7 +6,7 @@ function setPayment(network, address, amount, note){
   box.innerHTML = `
     <b>Сеть:</b> ${network}<br><br>
     <b>Сумма:</b> ${amount}<br><br>
-    <b>Адрес для оплаты:</b><br>
+    <b>Адрес:</b><br>
     <span class="address" id="wallet-address">${address}</span><br><br>
     <button class="copy-btn" onclick="copyAddress()">Скопировать адрес</button>
     <span id="copy-status"></span><br><br>

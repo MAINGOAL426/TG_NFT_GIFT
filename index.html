@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Оплата NFT</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -11,7 +12,7 @@
 <div class="site-bg">
 
   <div class="card">
-    <img src="nft.jpg" alt="NFT" class="nft-img">
+    <img src="images/Plush_Pepe.png" alt="NFT" class="nft-img">
 
     <h1>Название NFT</h1>
     <p class="desc">1/1 NFT · Передача после оплаты</p>
@@ -21,7 +22,6 @@
     </div>
 
     <div class="buttons">
-      <!-- USDT -->
       <button class="tg-btn" onclick="setPayment(
         'Ethereum (ERC-20)',
         '0xВАШ_METAMASK_АДРЕС',
@@ -29,7 +29,6 @@
         'USDT отправляйте только в сети Ethereum (ERC-20).'
       )">Оплатить USDT</button>
 
-      <!-- ETH -->
       <button class="tg-btn" onclick="setPayment(
         'Ethereum',
         '0xВАШ_METAMASK_АДРЕС',
@@ -37,7 +36,6 @@
         'ETH поступит на кошелёк MetaMask.'
       )">Оплатить ETH</button>
 
-      <!-- SOL -->
       <button class="tg-btn" onclick="setPayment(
         'Solana',
         'ВАШ_SOLANA_АДРЕС',

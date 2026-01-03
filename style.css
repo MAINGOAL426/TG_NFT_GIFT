@@ -1,12 +1,14 @@
+/* ----------------- Шрифты ----------------- */
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Inter', sans-serif; /* шрифт как на GetGems */
   height: 100%;
-  background-color: #1c1c1c; /* темный фон */
+  background-color: #0a0a0a; /* очень темный фон */
   color: #fff;
 }
 
+/* ----------------- Контейнер ----------------- */
 .site-bg {
   display: flex;
   justify-content: center;
@@ -14,12 +16,13 @@ body, html {
   min-height: 100vh;
 }
 
+/* ----------------- Карточка NFT ----------------- */
 .card {
   width: 420px;
-  background: #2c2c2c;
+  background: #121212; /* темная карточка */
   border-radius: 18px;
   padding: 20px;
-  box-shadow: 0 0 35px rgba(0,0,0,0.8);
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
 }
 
 .card img.nft-img {
@@ -30,39 +33,45 @@ body, html {
 h1 { 
   color: #fff; 
   margin: 14px 0 4px; 
+  font-weight: 600;
 }
+
 .desc { 
   font-size: 14px; 
-  color: #bbb; 
+  color: #aaa; 
 }
+
 .price { 
   margin:16px 0; 
   font-size:18px; 
-  font-weight:bold; 
+  font-weight: 500;
   color:#fff; 
 }
 
+/* ----------------- Кнопки ----------------- */
 .tg-btn {
   width: 100%; 
-  padding: 12px; 
+  padding: 14px; 
   margin-top: 10px;
-  background: linear-gradient(135deg, #37aee2, #1c87c9);
+  background: linear-gradient(135deg, #1f3c88, #3751a8); /* темно-синий градиент */
   border: none; 
   border-radius: 12px;
   color: #fff; 
   font-size: 15px; 
+  font-weight: 500;
   cursor: pointer; 
   transition: all 0.3s ease;
 }
 
 .tg-btn:hover { 
-  background: linear-gradient(135deg, #1c87c9, #37aee2); 
+  background: linear-gradient(135deg, #3751a8, #1f3c88); 
   transform: translateY(-2px); 
 }
 
+/* ----------------- Блок оплаты ----------------- */
 .payment-box {
   margin-top:15px; 
-  padding:12px;
+  padding:14px;
   background:#1a1a1a;
   border-radius:10px;
   font-size:13px; 
@@ -75,7 +84,7 @@ h1 {
 .copy-btn { 
   margin-top:8px; 
   padding:8px 12px; 
-  background:#1c87c9; 
+  background:#3751a8; 
   border:none; 
   border-radius:8px; 
   color:#fff; 
@@ -83,7 +92,7 @@ h1 {
   font-size:13px; 
 }
 
-.copy-btn:hover { background:#37aee2; }
+.copy-btn:hover { background:#1f3c88; }
 
 .warning { 
   margin-top:12px; 
