@@ -1,14 +1,12 @@
-/* ----------------- Шрифты ----------------- */
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif; /* шрифт как на GetGems */
+  font-family: 'Inter', sans-serif;
   height: 100%;
   background-color: #0a0a0a; /* очень темный фон */
   color: #fff;
 }
 
-/* ----------------- Контейнер ----------------- */
 .site-bg {
   display: flex;
   justify-content: center;
@@ -16,7 +14,6 @@ body, html {
   min-height: 100vh;
 }
 
-/* ----------------- Карточка NFT ----------------- */
 .card {
   width: 420px;
   background: #121212; /* темная карточка */
@@ -48,12 +45,11 @@ h1 {
   color:#fff; 
 }
 
-/* ----------------- Кнопки ----------------- */
 .tg-btn {
   width: 100%; 
   padding: 14px; 
   margin-top: 10px;
-  background: linear-gradient(135deg, #1f3c88, #3751a8); /* темно-синий градиент */
+  background: linear-gradient(135deg, #101830, #1a2b50); /* более темные кнопки */
   border: none; 
   border-radius: 12px;
   color: #fff; 
@@ -64,11 +60,10 @@ h1 {
 }
 
 .tg-btn:hover { 
-  background: linear-gradient(135deg, #3751a8, #1f3c88); 
+  background: linear-gradient(135deg, #1a2b50, #101830); 
   transform: translateY(-2px); 
 }
 
-/* ----------------- Блок оплаты ----------------- */
 .payment-box {
   margin-top:15px; 
   padding:14px;
@@ -84,7 +79,7 @@ h1 {
 .copy-btn { 
   margin-top:8px; 
   padding:8px 12px; 
-  background:#3751a8; 
+  background:#1a2b50; 
   border:none; 
   border-radius:8px; 
   color:#fff; 
@@ -92,7 +87,7 @@ h1 {
   font-size:13px; 
 }
 
-.copy-btn:hover { background:#1f3c88; }
+.copy-btn:hover { background:#101830; }
 
 .warning { 
   margin-top:12px; 

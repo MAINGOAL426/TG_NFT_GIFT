@@ -18,30 +18,25 @@
     <p class="desc">1/1 NFT · Передача после оплаты</p>
 
     <div class="price">
-      Цена: 100 USDT / 0.05 ETH / 1 SOL
+      Цена: 20 USDT / 0.01 ETH
     </div>
 
     <div class="buttons">
+      <!-- USDT -->
       <button class="tg-btn" onclick="setPayment(
         'Ethereum (ERC-20)',
         '0xВАШ_METAMASK_АДРЕС',
-        '100 USDT',
-        'USDT отправляйте только в сети Ethereum (ERC-20).'
+        '20 USDT',
+        'Отправляйте USDT только в сети Ethereum (ERC-20).'
       )">Оплатить USDT</button>
 
+      <!-- ETH -->
       <button class="tg-btn" onclick="setPayment(
         'Ethereum',
         '0xВАШ_METAMASK_АДРЕС',
-        '0.05 ETH',
+        '0.01 ETH',
         'ETH поступит на кошелёк MetaMask.'
       )">Оплатить ETH</button>
-
-      <button class="tg-btn" onclick="setPayment(
-        'Solana',
-        'ВАШ_SOLANA_АДРЕС',
-        '1 SOL',
-        'SOL отправляйте только в сети Solana.'
-      )">Оплатить SOL</button>
     </div>
 
     <div id="payment-box" class="payment-box">
