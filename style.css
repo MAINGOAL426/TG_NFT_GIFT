@@ -1,26 +1,22 @@
-/* ----------------- Общий фон сайта ----------------- */
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
   height: 100%;
-  background-color: #0a0a0a; /* почти черный фон, как GetGems */
+  background-color: #1c1c1c; /* темный фон */
   color: #fff;
 }
 
-/* ----------------- Контейнер сайта ----------------- */
 .site-bg {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  position: relative;
 }
 
-/* ----------------- Карточка NFT / оплата ----------------- */
 .card {
   width: 420px;
-  background: #1a1a1a; /* чуть светлее, чтобы выделять блок */
+  background: #2c2c2c;
   border-radius: 18px;
   padding: 20px;
   box-shadow: 0 0 35px rgba(0,0,0,0.8);
@@ -46,12 +42,11 @@ h1 {
   color:#fff; 
 }
 
-/* ----------------- Кнопки Telegram ----------------- */
 .tg-btn {
   width: 100%; 
   padding: 12px; 
   margin-top: 10px;
-  background: linear-gradient(135deg, #37aee2, #1c87c9); /* синий градиент */
+  background: linear-gradient(135deg, #37aee2, #1c87c9);
   border: none; 
   border-radius: 12px;
   color: #fff; 
@@ -65,11 +60,10 @@ h1 {
   transform: translateY(-2px); 
 }
 
-/* ----------------- Блок оплаты ----------------- */
 .payment-box {
   margin-top:15px; 
   padding:12px;
-  background:#111; /* темный блок */
+  background:#1a1a1a;
   border-radius:10px;
   font-size:13px; 
   word-break: break-all; 
