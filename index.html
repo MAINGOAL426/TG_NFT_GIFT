@@ -6,11 +6,14 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
-  <div class="card">
-    <img src="images/Plush_Pepe.png" alt="NFT">
 
+<div class="site-bg">
+  <!-- Фон с SVG-иконками -->
+  <svg class="svg-bg" id="svg-bg"></svg>
+
+  <div class="card">
+    <img src="images/Plush_Pepe.png" alt="NFT" class="nft-img">
     <h1>Название NFT</h1>
     <p class="desc">1/1 NFT · Передача после оплаты</p>
 
@@ -19,45 +22,19 @@
     </div>
 
     <div class="buttons">
-      <!-- USDT -->
-      <button onclick="setPayment(
-        'Ethereum (ERC-20)',
-        '0xВАШ_METAMASK_АДРЕС',
-        '100 USDT',
-        'USDT отправляйте только в сети Ethereum (ERC-20).'
-      )">
-        Оплатить USDT
-      </button>
-
-      <!-- ETH -->
-      <button onclick="setPayment(
-        'Ethereum',
-        '0xВАШ_METAMASK_АДРЕС',
-        '0.05 ETH',
-        'ETH поступит на кошелёк MetaMask.'
-      )">
-        Оплатить ETH
-      </button>
-
-      <!-- SOL -->
-      <button onclick="setPayment(
-        'Solana',
-        'ВАШ_SOLANA_АДРЕС',
-        '1 SOL',
-        'SOL отправляйте только в сети Solana.'
-      )">
-        Оплатить SOL
-      </button>
+      <button class="tg-btn" onclick="setPayment('Ethereum (ERC-20)','0xВАШ_METAMASK_АДРЕС','100 USDT','USDT в сети Ethereum (ERC-20).')">Оплатить USDT</button>
+      <button class="tg-btn" onclick="setPayment('Ethereum','0xВАШ_METAMASK_АДРЕС','0.05 ETH','ETH поступит на MetaMask.')">Оплатить ETH</button>
+      <button class="tg-btn" onclick="setPayment('Solana','ВАШ_SOLANA_АДРЕС','1 SOL','SOL отправляйте в сети Solana.')">Оплатить SOL</button>
     </div>
 
-    <div id="payment-box" class="payment-box">
-      Выберите способ оплаты
-    </div>
+    <div id="payment-box" class="payment-box">Выберите способ оплаты</div>
 
     <div class="warning">
       ⚠️ Отправляйте точную сумму и правильную сеть.<br>
       NFT будет передан после подтверждения транзакции.
     </div>
   </div>
+</div>
+
 </body>
 </html>
