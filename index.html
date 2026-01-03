@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Оплата NFT</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -18,35 +18,35 @@
     <p class="desc">1/1 NFT · Передача после оплаты</p>
 
     <div class="price">
-      Цена: 20 USDT / 0.01 ETH
+      Цена: 100 USDT / 0.05 ETH
     </div>
 
     <div class="buttons">
       <!-- USDT -->
       <button class="tg-btn" onclick="setPayment(
         'Ethereum (ERC-20)',
-        '0x810BcB79A799e9351ff5d38379fE37712829faDa',
-        '20 USDT',
-        'Отправляйте USDT только в сети Ethereum (ERC-20).'
-      )">Оплатить USDT</button>
+        '0xВАШ_METAMASK_АДРЕС',
+        '100 USDT',
+        'Отправляйте USDT только в сети Ethereum (ERC-20)!'
+      )">
+        ⚠️ Оплатить USDT
+      </button>
 
       <!-- ETH -->
       <button class="tg-btn" onclick="setPayment(
         'Ethereum',
-        '0x810BcB79A799e9351ff5d38379fE37712829faDa',
-        '0.01 ETH',
+        '0xВАШ_METAMASK_АДРЕС',
+        '0.05 ETH',
         'ETH поступит на кошелёк MetaMask.'
-      )">Оплатить ETH</button>
+      )">
+        Оплатить ETH
+      </button>
     </div>
 
     <div id="payment-box" class="payment-box">
       Выберите способ оплаты
     </div>
 
-    <div class="warning">
-      ⚠️ Отправляйте точную сумму и правильную сеть.<br>
-      NFT будет передан после подтверждения транзакции.
-    </div>
   </div>
 
 </div>

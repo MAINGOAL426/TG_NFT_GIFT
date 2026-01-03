@@ -3,14 +3,19 @@ let currentAddress = "";
 function setPayment(network, address, amount, note){
   currentAddress = address;
   const box = document.getElementById("payment-box");
+  
+  // Показываем предупреждение только для USDT
+  const warningHTML = note.includes("USDT") 
+      ? `<div class="payment-warning">${note}</div>` 
+      : `<small>${note}</small>`;
+  
   box.innerHTML = `
     <b>Сеть:</b> ${network}<br><br>
     <b>Сумма:</b> ${amount}<br><br>
     <b>Адрес:</b><br>
     <span class="address" id="wallet-address">${address}</span><br><br>
-    <button class="copy-btn" onclick="copyAddress()">Скопировать адрес</button>
-    <span id="copy-status"></span><br><br>
-    <small>${note}</small>
+    <button class="copy-btn" onclick="copyAddress()">Скопировать адрес</button><br><br>
+    ${warningHTML}
   `;
 }
 
