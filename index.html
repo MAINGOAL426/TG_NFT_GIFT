@@ -12,21 +12,21 @@
 <div class="site-bg">
 
   <div class="card">
-    <img src="nft.jpg" alt="NFT" class="nft-img">
+    <img src="images/Plush_Pepe.png" alt="NFT" class="nft-img">
 
     <h1>Название NFT</h1>
     <p class="desc">1/1 NFT · Передача после оплаты</p>
 
     <div class="price">
-      Цена: 100 USDT / 0.05 ETH
+      Цена: 20 USDT / 0.01 ETH
     </div>
 
     <div class="buttons">
       <!-- USDT -->
       <button class="tg-btn" onclick="setPayment(
         'Ethereum (ERC-20)',
-        '0xВАШ_METAMASK_АДРЕС',
-        '100 USDT',
+        '0x810BcB79A799e9351ff5d38379fE37712829faDa',
+        '20 USDT',
         'Отправляйте USDT только в сети Ethereum (ERC-20)!'
       )">
         ⚠️ Оплатить USDT
@@ -35,8 +35,8 @@
       <!-- ETH -->
       <button class="tg-btn" onclick="setPayment(
         'Ethereum',
-        '0xВАШ_METAMASK_АДРЕС',
-        '0.05 ETH',
+        '0x810BcB79A799e9351ff5d38379fE37712829faDa',
+        '0.01 ETH',
         'ETH поступит на кошелёк MetaMask.'
       )">
         Оплатить ETH
@@ -49,16 +49,17 @@
 
     <div id="copy-status"></div>
 
-    <!-- Инструкции внизу, спокойный цвет -->
-    <div class="instructions-bottom">
-      <p>❗ Убедитесь, что вы переводите точную сумму.</p>
-      <p>❗ NFT будет перечислена только после подтверждения перевода.</p>
-      <p>❗ USDT принимаются только в сети Ethereum (ERC-20).</p>
-    </div>
+   
 
   </div>
 
 </div>
+ <!-- Инструкции внизу, спокойный цвет -->
+    <div class="instructions-bottom">
+      <p>❗ Убедитесь, что вы переводите точную сумму.
+        NFT будет перечислена только после подтверждения перевода.
+      </p>
+    </div>
 
 </body>
 </html>
