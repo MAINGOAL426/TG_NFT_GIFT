@@ -1,3 +1,4 @@
+/* ----------------- Общий стиль ----------------- */
 body, html {
   margin: 0;
   padding: 0;
@@ -30,7 +31,7 @@ body, html {
 h1 { 
   color: #fff; 
   margin: 14px 0 4px; 
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .desc { 
@@ -50,18 +51,18 @@ h1 {
   width: 100%; 
   padding: 14px; 
   margin-top: 10px;
-  background-color: #1a2b50; /* ровный темный цвет */
+  background-color: #166BE9; /* ровный синий цвет */
   border: none; 
   border-radius: 12px;
   color: #fff; 
   font-size: 15px; 
-  font-weight: 500;
+  font-weight: 700; /* жирный текст */
   cursor: pointer; 
   transition: all 0.2s ease;
 }
 
 .tg-btn:hover { 
-  background-color: #101830; /* чуть темнее при наведении */
+  background-color: #0f549e; /* чуть темнее при наведении */
   transform: translateY(-1px); 
 }
 
@@ -81,15 +82,16 @@ h1 {
 .copy-btn { 
   margin-top:8px; 
   padding:8px 12px; 
-  background:#1a2b50; 
+  background:#166BE9; 
   border:none; 
   border-radius:8px; 
   color:#fff; 
+  font-size:14px; 
+  font-weight:700; 
   cursor:pointer; 
-  font-size:13px; 
 }
 
-.copy-btn:hover { background:#101830; }
+.copy-btn:hover { background:#0f549e; }
 
 .warning { 
   margin-top:12px; 
