@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>NFT Payment</title>
+  <title>Оплата NFT</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -11,55 +11,53 @@
   <div class="card">
     <img src="nft.jpg" alt="NFT">
 
-    <h1>NFT Name</h1>
-    <p class="desc">1/1 NFT · Manual transfer after payment</p>
+    <h1>Название NFT</h1>
+    <p class="desc">1/1 NFT · Передача после оплаты</p>
 
     <div class="price">
-      Price: 100 USDT / 0.05 ETH / 1 SOL
+      Цена: 100 USDT / 0.05 ETH / 1 SOL
     </div>
 
     <div class="buttons">
       <!-- USDT -->
       <button onclick="setPayment(
         'Ethereum (ERC-20)',
-        '0xYOUR_METAMASK_ADDRESS',
+        '0xВАШ_METAMASK_АДРЕС',
         '100 USDT',
-        'USDT must be sent via ERC-20 network only.'
+        'USDT принимается только в сети ERC-20.'
       )">
-        Pay with USDT
+        Оплатить USDT
       </button>
 
       <!-- ETH -->
       <button onclick="setPayment(
         'Ethereum',
-        '0xYOUR_METAMASK_ADDRESS',
+        '0xВАШ_METAMASK_АДРЕС',
         '0.05 ETH',
-        'ETH will be received in MetaMask.'
+        'ETH поступит на кошелёк MetaMask.'
       )">
-        Pay with ETH
+        Оплатить ETH
       </button>
 
       <!-- SOL -->
       <button onclick="setPayment(
         'Solana',
-        'YOUR_SOLANA_ADDRESS',
+        'ВАШ_SOLANA_АДРЕС',
         '1 SOL',
-        'SOL payments go to Solana wallet (Phantom).'
+        'SOL отправляйте только на Solana-кошелёк (Phantom).'
       )">
-        Pay with SOL
+        Оплатить SOL
       </button>
     </div>
 
     <div id="payment-box" class="payment-box">
-      Select payment method
+      Выберите способ оплаты
     </div>
 
     <div class="warning">
-      ⚠️ Send exact amount and correct network.  
-      NFT will be transferred after confirmation.
+      ⚠️ Отправляйте точную сумму и правильную сеть.<br>
+      NFT будет передан после подтверждения транзакции.
     </div>
   </div>
 </body>
-</html>
-
 </html>
