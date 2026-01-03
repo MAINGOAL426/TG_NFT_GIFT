@@ -9,25 +9,43 @@
 
 <body>
   <div class="card">
-    <img src="https://beee.pro/shop/telegram/snoop-dogg-41320" alt="NFT image">
+    <img src="nft.jpg" alt="NFT">
 
-    <h1>Exclusive NFT</h1>
+    <h1>NFT Name</h1>
     <p class="desc">1/1 NFT · Manual transfer after payment</p>
 
     <div class="price">
-      Price: 0.05 ETH / 100 USDT / 1 SOL
+      Price: 100 USDT / 0.05 ETH / 1 SOL
     </div>
 
     <div class="buttons">
-      <button onclick="setPayment('Ethereum','0xYOUR_ETH_ADDRESS','0.05 ETH')">
-        Pay with ETH
-      </button>
-
-      <button onclick="setPayment('ERC‑20','0xYOUR_USDT_ADDRESS','100 USDT')">
+      <!-- USDT -->
+      <button onclick="setPayment(
+        'Ethereum (ERC-20)',
+        '0xYOUR_METAMASK_ADDRESS',
+        '100 USDT',
+        'USDT must be sent via ERC-20 network only.'
+      )">
         Pay with USDT
       </button>
 
-      <button onclick="setPayment('Solana','YOUR_SOL_ADDRESS','1 SOL')">
+      <!-- ETH -->
+      <button onclick="setPayment(
+        'Ethereum',
+        '0xYOUR_METAMASK_ADDRESS',
+        '0.05 ETH',
+        'ETH will be received in MetaMask.'
+      )">
+        Pay with ETH
+      </button>
+
+      <!-- SOL -->
+      <button onclick="setPayment(
+        'Solana',
+        'YOUR_SOLANA_ADDRESS',
+        '1 SOL',
+        'SOL payments go to Solana wallet (Phantom).'
+      )">
         Pay with SOL
       </button>
     </div>
@@ -37,8 +55,11 @@
     </div>
 
     <div class="warning">
-      ⚠️ Send exact amount and correct network
+      ⚠️ Send exact amount and correct network.  
+      NFT will be transferred after confirmation.
     </div>
   </div>
 </body>
+</html>
+
 </html>
