@@ -4,7 +4,6 @@ function setPayment(network, address, amount, note){
   currentAddress = address;
   const box = document.getElementById("payment-box");
   
-  // Показываем предупреждение только для USDT
   const warningHTML = note.includes("USDT") 
       ? `<div class="payment-warning">${note}</div>` 
       : `<small>${note}</small>`;
