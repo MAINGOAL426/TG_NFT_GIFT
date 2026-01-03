@@ -45,25 +45,27 @@ h1 {
   color:#fff; 
 }
 
+/* ----------------- Простые темные кнопки ----------------- */
 .tg-btn {
   width: 100%; 
   padding: 14px; 
   margin-top: 10px;
-  background: linear-gradient(135deg, #101830, #1a2b50); /* более темные кнопки */
+  background-color: #1a2b50; /* ровный темный цвет */
   border: none; 
   border-radius: 12px;
   color: #fff; 
   font-size: 15px; 
   font-weight: 500;
   cursor: pointer; 
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .tg-btn:hover { 
-  background: linear-gradient(135deg, #1a2b50, #101830); 
-  transform: translateY(-2px); 
+  background-color: #101830; /* чуть темнее при наведении */
+  transform: translateY(-1px); 
 }
 
+/* ----------------- Блок оплаты ----------------- */
 .payment-box {
   margin-top:15px; 
   padding:14px;
